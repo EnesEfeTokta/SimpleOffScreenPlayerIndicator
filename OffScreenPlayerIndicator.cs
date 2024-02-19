@@ -18,18 +18,10 @@ public class OffScreenPlayerIndicator : MonoBehaviour
     public Sprite squareSprite;
     public Sprite arrowSprite;
 
-
-
-
-
     void Start()
     {
         TargetFind();
     }
-
-
-
-
 
     void Update()
     {
@@ -74,17 +66,11 @@ public class OffScreenPlayerIndicator : MonoBehaviour
         }
     }
 
-
-
-
     // Düşmanları bul
     void TargetFind()
     {
         targetObjects = GameObject.FindGameObjectsWithTag("Enemy");
     }
-
-
-
 
     // Hedefi takip et
     void TargetFollow(GameObject targetObject, GameObject markerIcon)
@@ -114,9 +100,6 @@ public class OffScreenPlayerIndicator : MonoBehaviour
             LookAtTarget(targetObject, markerIcon, false); // Hedefe bakma
         }
     }
-
-
-
 
     // Hedefe bak
     void LookAtTarget(GameObject targetObject, GameObject markerIcon, bool isLookAtTarget)
